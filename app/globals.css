@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex; /* Make the navbar items display horizontally */
+  justify-content: space-around; /* Adjust the spacing between items */
+  padding: 10px;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Make the list items display horizontally */
+}
+
+.navItem {
+  margin: 0 20px; /* Add spacing between individual navigation items */
+}
+
+/* Style the links within the navbar */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
