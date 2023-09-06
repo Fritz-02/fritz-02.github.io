@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import RepositoryItem from "../components/projects/Project";
+import { useState, useEffect } from 'react';
+import RepoList from '../components/projects/RepoList';
 
 interface Repository {
   id: number;
@@ -11,7 +11,7 @@ interface Repository {
 
 const fetctRepos = async () => {
   try {
-    const response = await fetch("https://api.github.com/users/fritz-02/repos");
+    const response = await fetch('https://api.github.com/users/fritz-02/repos');
 
     if (!response.ok) {
       throw new Error(
@@ -23,33 +23,27 @@ const fetctRepos = async () => {
 
     return repos;
   } catch (error: any) {
-    console.error("Error fetching GitHub repositories:", error.message);
+    console.error('Error fetching GitHub repositories:', error.message);
     return [];
   }
 };
 
-const Page = async () => {
-    const repos = await fetctRepos();
-  
+const Projects = async () => {
+  const repos = await fetctRepos();
+
   return (
     <>
       <div>
-        <h1>Fritz&apos;s GitHub Repositories</h1>
+        <h1 className='header'>My GitHub Repositories</h1>
         {repos.length === 0 ? (
           <p>No public repositories found.</p>
         ) : (
-          <ul>
-            {repos.map((repo) => (
-                <li key={repo.id}>
-                    <RepositoryItem repo={repo}/>
-                </li>
-                
-            ))}
-          </ul>
+          <RepoList repos={repos}/>
+
         )}
       </div>
     </>
   );
 };
 
-export default Page;
+export default Projects;

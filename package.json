@@ -1,6 +1,6 @@
 {
   "name": "fritz-02.github.io",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -33,6 +33,6 @@
     "*.{js,ts,tsx}": [
       "eslint --fix --max-warnings=0 ."
     ],
-    "*{!.ico}": "prettier --config .prettierrc --write"
+    "*!.ico": "prettier --config .prettierrc --write"
   }
 }
