@@ -1,10 +1,10 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <ul className="navList">
-         <li className="navItem">
+        <li className="navItem">
           <Link href="/">Home</Link>
         </li>
         <li className="navItem">

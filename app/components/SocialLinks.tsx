@@ -1,7 +1,5 @@
 const SocialLinks = () => {
-  const sites = [
-    { name: 'Github', link: 'https://github.com/fritz-02' },
-  ];
+  const sites = [{ name: 'Github', link: 'https://github.com/fritz-02' }];
   return (
     <div>
       <ul className="list-disc pl-4">

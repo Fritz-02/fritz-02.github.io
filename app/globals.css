@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .navbar {
   background-color: #333;
   color: #fff;
@@ -33,19 +32,42 @@ a:hover {
 }
 
 .header {
-  font-size: 1.125rem/* 18px */;
-    line-height: 1.75rem/* 28px */;
-    font-weight: 600;
-    margin-bottom: 0.5rem/* 8px */;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+  font-weight: 600;
+  margin-bottom: 0.5rem /* 8px */;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #kofiframe {
-  border:none;width:100%;padding:4px;background:#f9f9f9;
+  border: none;
+  width: 100%;
+  padding: 4px;
+  background: #f9f9f9;
 }
 
 .kofi {
-  border:0px;height:36px;
+  border: 0px;
+  height: 36px;
+}
+
+.tile-icon-lang {
+  margin-right: 10px;
+}
+
+.repo-tile {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.repo-tile-python {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
+.repo-tile-javascript {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
 }

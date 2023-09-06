@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import RepoList from '../components/projects/RepoList';
 
 interface Repository {
@@ -34,12 +33,11 @@ const Projects = async () => {
   return (
     <>
       <div>
-        <h1 className='header'>My GitHub Repositories</h1>
+        <h1 className="header">My GitHub Repositories</h1>
         {repos.length === 0 ? (
           <p>No public repositories found.</p>
         ) : (
-          <RepoList repos={repos}/>
-
+          <RepoList repos={repos} />
         )}
       </div>
     </>
