@@ -21,6 +21,11 @@ const Donate = () => {
             alt="Buy Me a Coffee at ko-fi.com"
           />
         </a>
+        <p>
+          <a href="https://www.destiny.gg/subscribe">
+            You can also gift me a DGG sub, my username is Fritz. dggL
+          </a>
+        </p>
       </div>
     </>
   );
